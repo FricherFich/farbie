@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='cp1252'?>
+<Envelopes>
+  <ClipEnvelope Id="2">
+    <EnvelopeTarget>
+      <PointeeId Value="20419" />
+    </EnvelopeTarget>
+    <Automation>
+      <Events>
+        <FloatEvent Id="0" Time="-63072000" Value="0" />
+        <FloatEvent Id="1" Time="0" Value="1.0" />
+        <FloatEvent Id="2" Time="1" Value="0.0" />
+        <FloatEvent Id="3" Time="1" Value="1.0" />
+      </Events>
+      <AutomationTransformViewState>
+        <IsTransformPending Value="false" />
+        <TimeAndValueTransforms />
+      </AutomationTransformViewState>
+    </Automation>
+    <LoopSlot>
+      <Value />
+    </LoopSlot>
+    <ScrollerTimePreserver>
+      <LeftTime Value="0" />
+      <RightTime Value="0" />
+    </ScrollerTimePreserver>
+  </ClipEnvelope>
+  <ClipEnvelope Id="3">
+    <EnvelopeTarget>
+      <PointeeId Value="20423" />
+    </EnvelopeTarget>
+    <Automation>
+      <Events>
+        <FloatEvent Id="0" Time="-63072000" Value="0" />
+        <FloatEvent Id="1" Time="0" Value="1.0" />
+        <FloatEvent Id="2" Time="1" Value="0.0" />
+        <FloatEvent Id="3" Time="1" Value="1.0" />
+      </Events>
+      <AutomationTransformViewState>
+        <IsTransformPending Value="false" />
+        <TimeAndValueTransforms />
+      </AutomationTransformViewState>
+    </Automation>
+    <LoopSlot>
+      <Value />
+    </LoopSlot>
+    <ScrollerTimePreserver>
+      <LeftTime Value="0" />
+      <RightTime Value="0" />
+    </ScrollerTimePreserver>
+  </ClipEnvelope>
+  <ClipEnvelope Id="4">
+    <EnvelopeTarget>
+      <PointeeId Value="20421" />
+    </EnvelopeTarget>
+    <Automation>
+      <Events>
+        <FloatEvent Id="0" Time="-63072000" Value="0" />
+        <FloatEvent Id="1" Time="0" Value="1.0" />
+        <FloatEvent Id="2" Time="1" Value="0.0" />
+        <FloatEvent Id="3" Time="1" Value="1.0" />
+      </Events>
+      <AutomationTransformViewState>
+        <IsTransformPending Value="false" />
+        <TimeAndValueTransforms />
+      </AutomationTransformViewState>
+    </Automation>
+    <LoopSlot>
+      <Value />
+    </LoopSlot>
+    <ScrollerTimePreserver>
+      <LeftTime Value="0" />
+      <RightTime Value="0" />
+    </ScrollerTimePreserver>
+  </ClipEnvelope>
+</Envelopes>

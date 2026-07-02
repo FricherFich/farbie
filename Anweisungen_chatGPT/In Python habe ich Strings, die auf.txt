@@ -1,0 +1,8 @@
+In Python habe ich Strings, die auf folgende darin enthaltene Regex-Patterns untersucht werden sollen:
+
+r"\~\?(?P<identifier>\d)(.+)\%"
+
+Es können mehrere solcher Patterns vorkommen, wobei ich immer einen möglichst KURZEN Ausdruck in der Klammer "(.+)" haben möchte. Schreibe mir ein Python-Skript, welche jeden gegebenen String filtert und die einzelnen Gruppen als Dict ausgibt.
+
+Beispielstring:
+"timestamp=~1?2:10~, lag=~2?1,2,3,4,5~"
