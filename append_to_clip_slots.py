@@ -1,12 +1,10 @@
 import xml.etree.ElementTree as ET
 import copy
-import os
-import re
 from als_xml_conversion import als_to_xml_structure, prettify, prettified_xml_string_to_als
 
 
 def append_to_existing_clipslot_list(root, clip_name: str, clip_current_end, clip_envelope_xml_content, scene_name: str):
-    """Befuellt den naechsten freien ClipSlot unter den vorhandenen Clips mit den neuen Automationskurven."""
+    """Befuellt den naechsten freien ClipSlot bzw. erweitert das Projekt dynamisch um neue Slots und Szenen."""
 
     # 1. Basis-Clip aus Slot 0 als Template holen
     track = root.find(".//Tracks/MidiTrack")
@@ -17,11 +15,12 @@ def append_to_existing_clipslot_list(root, clip_name: str, clip_current_end, cli
     if base_clip is None:
         raise ValueError("Kein Basis-MidiClip in Slot 0 als Vorlage gefunden.")
 
-    # 2. Den naechsten freien ClipSlot suchen (wo <Value/> leer ist)
-    clip_slots = track.findall(".//MainSequencer/ClipSlotList/ClipSlot")
+    main_csl = track.find(".//MainSequencer/ClipSlotList")
+    clip_slots = main_csl.findall("ClipSlot")
     target_slot = None
     target_slot_index = -1
 
+    # 2. Den naechsten freien ClipSlot suchen (wo <Value/> leer ist)
     for idx, slot in enumerate(clip_slots):
         val = slot.find("ClipSlot/Value")
         if val is not None and len(val) == 0:  # leerer Slot
@@ -29,10 +28,31 @@ def append_to_existing_clipslot_list(root, clip_name: str, clip_current_end, cli
             target_slot_index = idx
             break
 
+    # Falls alle vorhandenen Slots belegt sind: Dynamisch neue Slots und neue Szene erzeugen
     if target_slot is None:
-        raise RuntimeError(
-            f"Kein freier ClipSlot mehr verfuegbar. Alle {len(clip_slots)} vorhandenen Slots sind belegt."
-        )
+        target_slot_index = len(clip_slots)
+
+        # 2a. In allen ClipSlotLists des Projekts einen neuen leeren Slot anhaengen (Matrix synchron halten)
+        for csl in root.findall(".//ClipSlotList"):
+            last_slot = csl.findall("ClipSlot")[-1]
+            new_empty_slot = copy.deepcopy(last_slot)
+            new_empty_slot.set("Id", str(target_slot_index))
+            val = new_empty_slot.find("ClipSlot/Value")
+            if val is not None:
+                val.clear()
+            csl.append(new_empty_slot)
+
+            if csl is main_csl:
+                target_slot = new_empty_slot
+
+        # 2b. In LiveSet/Scenes eine neue Szene mit passender Id anhaengen
+        scenes_parent = root.find(".//LiveSet/Scenes")
+        if scenes_parent is not None:
+            existing_scenes = scenes_parent.findall("Scene")
+            if existing_scenes:
+                new_scene = copy.deepcopy(existing_scenes[-1])
+                new_scene.set("Id", str(target_slot_index))
+                scenes_parent.append(new_scene)
 
     # 3. Vorlage kopieren und Parameter setzen
     new_clip = copy.deepcopy(base_clip)
@@ -58,7 +78,7 @@ def append_to_existing_clipslot_list(root, clip_name: str, clip_current_end, cli
         if out_marker is not None:
             out_marker.set("Value", str_len)
 
-    # 4. Envelopes an der EXAKTEN Schema-Position ersetzen (direkt hinter TimeSignature)
+    # 4. Envelopes ersetzen (direkt hinter TimeSignature)
     if clip_envelope_xml_content is not None:
         if isinstance(clip_envelope_xml_content, str):
             new_envelopes = ET.fromstring(clip_envelope_xml_content)
@@ -75,12 +95,12 @@ def append_to_existing_clipslot_list(root, clip_name: str, clip_current_end, cli
             insert_pos = list(new_clip).index(time_sig) + 1
             new_clip.insert(insert_pos, new_envelopes)
 
-    # 5. In den leeren Ziel-Slot einhaengen
+    # 5. In den Ziel-Slot einhaengen
     slot_value = target_slot.find("ClipSlot/Value")
     slot_value.clear()
     slot_value.append(new_clip)
 
-    # 6. Szene an target_slot_index umbenennen (Live 12 Schema: <LiveSet><Scenes><Scene>)
+    # 6. Szene an target_slot_index benennen
     scenes = root.findall(".//LiveSet/Scenes/Scene")
     if target_slot_index < len(scenes) and scene_name:
         scene_name_elem = scenes[target_slot_index].find("Name")

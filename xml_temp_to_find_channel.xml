@@ -16,8 +16,8 @@
 					<IsValueSampleBased Value="false" />
 				</TrackDelay>
 				<Name>
-					<EffectiveName Value="1-MIDI" />
-					<UserName Value="" />
+					<EffectiveName Value="DO NOT REMOVE" />
+					<UserName Value="DO NOT REMOVE" />
 					<Annotation Value="" />
 					<MemorizedFirstClipName Value="" />
 				</Name>
@@ -46,7 +46,7 @@
 						<AutomationLanes>
 							<AutomationLane Id="0">
 								<SelectedDevice Value="1" />
-								<SelectedEnvelope Value="23" />
+								<SelectedEnvelope Value="86" />
 								<IsContentSelectedInDocument Value="true" />
 								<LaneHeight Value="68" />
 							</AutomationLane>
@@ -55,7 +55,7 @@
 					</AutomationLanes>
 					<ClipEnvelopeChooserViewState>
 						<SelectedDevice Value="1" />
-						<SelectedEnvelope Value="23" />
+						<SelectedEnvelope Value="86" />
 						<PreferModulationVisible Value="false" />
 					</ClipEnvelopeChooserViewState>
 					<AudioInputRouting>
@@ -273,9 +273,9 @@
 												<HiddenLoopStart Value="0" />
 												<HiddenLoopEnd Value="4" />
 											</Loop>
-											<Name Value="basic ClipSlot" />
+											<Name Value="do not remove either" />
 											<Annotation Value="" />
-											<Color Value="1" />
+											<Color Value="13" />
 											<LaunchMode Value="0" />
 											<LaunchQuantisation Value="0" />
 											<TimeSignature>
@@ -1017,8 +1017,8 @@
 								<ModulationSourceCount Value="0" />
 								<ParametersListWrapper LomId="0" />
 								<Pointee Id="21403" />
-								<LastSelectedTimeableIndex Value="23" />
-								<LastSelectedClipEnvelopeIndex Value="23" />
+								<LastSelectedTimeableIndex Value="86" />
+								<LastSelectedClipEnvelopeIndex Value="86" />
 								<LastPresetRef>
 									<Value />
 								</LastPresetRef>
@@ -1048,7 +1048,7 @@
 										<NumAudioOutputs Value="1" />
 										<IsPlaceholderDevice Value="false" />
 										<Preset>
-											<Vst3Preset Id="1">
+											<Vst3Preset Id="5">
 												<OverwriteProtectionNumber Value="3076" />
 												<MpeEnabled Value="0" />
 												<MpeSettings>
@@ -1078,8 +1078,8 @@
 												<DeviceType Value="2" />
 												<ProcessorState>
 													000000000000000000000000D0776B3EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFFFF
-													FFFFFF00FFFFFF3ED077FF3EFFFFFFFF000000000000000000000000000000000000000000000000
-													00000000000000000000000000000000000000000000000000000000000000000000000000000000
+													FFFFFF3EFF5FFF3EFFFFFF3EFFFFFFFFFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFFFF
+													000000FFFFFFFF000000FFFFFFFF000000FFFFFFFF00000000000000000000000000000000000000
 													00000000000000000000000000000000000000000000000000000000000000000000000000000000
 													00000000000000000000000000000000000000000000000000000000000000000000000000000000
 													00000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -1177,7 +1177,7 @@
 										<VisualIndex Value="2" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="255" />
+											<Manual Value="107" />
 											<MidiControllerRange>
 												<Min Value="0" />
 												<Max Value="255" />
@@ -1205,7 +1205,7 @@
 										<VisualIndex Value="3" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
 												<Max Value="255" />
@@ -1541,7 +1541,7 @@
 										<VisualIndex Value="15" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="253" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
 												<Max Value="255" />
@@ -1849,7 +1849,7 @@
 										<VisualIndex Value="26" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="62" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
 												<Max Value="255" />
@@ -1905,7 +1905,7 @@
 										<VisualIndex Value="28" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="255" />
+											<Manual Value="253" />
 											<MidiControllerRange>
 												<Min Value="0" />
 												<Max Value="255" />
@@ -2017,7 +2017,7 @@
 										<VisualIndex Value="32" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="255" />
+											<Manual Value="62" />
 											<MidiControllerRange>
 												<Min Value="0" />
 												<Max Value="255" />
@@ -2045,7 +2045,7 @@
 										<VisualIndex Value="33" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="208" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
 												<Max Value="255" />
@@ -2073,7 +2073,7 @@
 										<VisualIndex Value="34" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="119" />
+											<Manual Value="95" />
 											<MidiControllerRange>
 												<Min Value="0" />
 												<Max Value="255" />
@@ -2101,7 +2101,7 @@
 										<VisualIndex Value="35" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="107" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
 												<Max Value="255" />
@@ -2213,7 +2213,7 @@
 										<VisualIndex Value="39" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="255" />
+											<Manual Value="62" />
 											<MidiControllerRange>
 												<Min Value="0" />
 												<Max Value="255" />
@@ -2347,16 +2347,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="44">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 74" />
+										<ParameterId Value="1074" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="44" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21492">
 												<LockEnvelope Value="0" />
@@ -2366,8 +2366,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2375,16 +2375,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="45">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 75" />
+										<ParameterId Value="1075" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="45" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21494">
 												<LockEnvelope Value="0" />
@@ -2394,8 +2394,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2403,16 +2403,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="46">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 76" />
+										<ParameterId Value="1076" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="46" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21496">
 												<LockEnvelope Value="0" />
@@ -2422,8 +2422,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2431,16 +2431,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="47">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 78" />
+										<ParameterId Value="1078" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="47" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21498">
 												<LockEnvelope Value="0" />
@@ -2450,8 +2450,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2459,16 +2459,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="48">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 79" />
+										<ParameterId Value="1079" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="48" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21500">
 												<LockEnvelope Value="0" />
@@ -2478,8 +2478,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2487,16 +2487,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="49">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 73" />
+										<ParameterId Value="1073" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="49" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21502">
 												<LockEnvelope Value="0" />
@@ -2506,8 +2506,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2515,16 +2515,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="50">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 80" />
+										<ParameterId Value="1080" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="50" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21504">
 												<LockEnvelope Value="0" />
@@ -2534,8 +2534,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2543,16 +2543,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="51">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 81" />
+										<ParameterId Value="1081" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="51" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21506">
 												<LockEnvelope Value="0" />
@@ -2562,8 +2562,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2571,16 +2571,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="52">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 82" />
+										<ParameterId Value="1082" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="52" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21508">
 												<LockEnvelope Value="0" />
@@ -2590,8 +2590,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2599,16 +2599,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="53">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 83" />
+										<ParameterId Value="1083" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="53" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21510">
 												<LockEnvelope Value="0" />
@@ -2618,8 +2618,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2627,16 +2627,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="54">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 85" />
+										<ParameterId Value="1085" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="54" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21512">
 												<LockEnvelope Value="0" />
@@ -2646,8 +2646,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2655,16 +2655,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="55">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 86" />
+										<ParameterId Value="1086" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="55" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21514">
 												<LockEnvelope Value="0" />
@@ -2674,8 +2674,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2683,16 +2683,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="56">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 87" />
+										<ParameterId Value="1087" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="56" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21516">
 												<LockEnvelope Value="0" />
@@ -2702,8 +2702,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2711,16 +2711,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="57">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 88" />
+										<ParameterId Value="1088" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="57" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21518">
 												<LockEnvelope Value="0" />
@@ -2730,8 +2730,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2739,16 +2739,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="58">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 89" />
+										<ParameterId Value="1089" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="58" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="255" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21520">
 												<LockEnvelope Value="0" />
@@ -2758,8 +2758,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2767,16 +2767,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="59">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 90" />
+										<ParameterId Value="1090" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="59" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21522">
 												<LockEnvelope Value="0" />
@@ -2786,8 +2786,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2795,16 +2795,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="60">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 92" />
+										<ParameterId Value="1092" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="60" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21524">
 												<LockEnvelope Value="0" />
@@ -2814,8 +2814,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2823,16 +2823,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="61">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 93" />
+										<ParameterId Value="1093" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="61" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21526">
 												<LockEnvelope Value="0" />
@@ -2842,8 +2842,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2851,16 +2851,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="62">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 94" />
+										<ParameterId Value="1094" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="62" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21528">
 												<LockEnvelope Value="0" />
@@ -2870,8 +2870,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2879,16 +2879,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="63">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 95" />
+										<ParameterId Value="1095" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="63" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21530">
 												<LockEnvelope Value="0" />
@@ -2898,8 +2898,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2907,16 +2907,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="64">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 96" />
+										<ParameterId Value="1096" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="64" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21532">
 												<LockEnvelope Value="0" />
@@ -2926,8 +2926,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2935,16 +2935,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="65">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 97" />
+										<ParameterId Value="1097" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="65" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21534">
 												<LockEnvelope Value="0" />
@@ -2954,8 +2954,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2963,16 +2963,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="66">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 99" />
+										<ParameterId Value="1099" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="66" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21536">
 												<LockEnvelope Value="0" />
@@ -2982,8 +2982,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -2991,16 +2991,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="67">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 100" />
+										<ParameterId Value="1100" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="67" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21538">
 												<LockEnvelope Value="0" />
@@ -3010,8 +3010,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3019,16 +3019,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="68">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 115" />
+										<ParameterId Value="1115" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="68" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21540">
 												<LockEnvelope Value="0" />
@@ -3038,8 +3038,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3047,16 +3047,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="69">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 116" />
+										<ParameterId Value="1116" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="69" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21542">
 												<LockEnvelope Value="0" />
@@ -3066,8 +3066,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3075,16 +3075,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="70">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 117" />
+										<ParameterId Value="1117" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="70" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21544">
 												<LockEnvelope Value="0" />
@@ -3094,8 +3094,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3103,16 +3103,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="71">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 143" />
+										<ParameterId Value="1143" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="71" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21546">
 												<LockEnvelope Value="0" />
@@ -3122,8 +3122,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3131,16 +3131,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="72">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 144" />
+										<ParameterId Value="1144" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="72" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21548">
 												<LockEnvelope Value="0" />
@@ -3150,8 +3150,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3159,16 +3159,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="73">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 145" />
+										<ParameterId Value="1145" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="73" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21550">
 												<LockEnvelope Value="0" />
@@ -3178,8 +3178,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3187,16 +3187,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="74">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 122" />
+										<ParameterId Value="1122" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="74" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21552">
 												<LockEnvelope Value="0" />
@@ -3206,8 +3206,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3215,16 +3215,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="75">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 123" />
+										<ParameterId Value="1123" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="75" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21554">
 												<LockEnvelope Value="0" />
@@ -3234,8 +3234,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3243,16 +3243,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="76">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 124" />
+										<ParameterId Value="1124" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="76" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21556">
 												<LockEnvelope Value="0" />
@@ -3262,8 +3262,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3271,16 +3271,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="77">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 129" />
+										<ParameterId Value="1129" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="77" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21558">
 												<LockEnvelope Value="0" />
@@ -3290,8 +3290,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3299,16 +3299,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="78">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 130" />
+										<ParameterId Value="1130" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="78" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21560">
 												<LockEnvelope Value="0" />
@@ -3318,8 +3318,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3327,16 +3327,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="79">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 131" />
+										<ParameterId Value="1131" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="79" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21562">
 												<LockEnvelope Value="0" />
@@ -3346,8 +3346,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3355,16 +3355,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="80">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 150" />
+										<ParameterId Value="1150" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="80" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21564">
 												<LockEnvelope Value="0" />
@@ -3374,8 +3374,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3383,16 +3383,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="81">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 151" />
+										<ParameterId Value="1151" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="81" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21566">
 												<LockEnvelope Value="0" />
@@ -3402,8 +3402,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3411,16 +3411,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="82">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 152" />
+										<ParameterId Value="1152" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="82" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21568">
 												<LockEnvelope Value="0" />
@@ -3430,8 +3430,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3439,16 +3439,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="83">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 136" />
+										<ParameterId Value="1136" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="83" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21570">
 												<LockEnvelope Value="0" />
@@ -3458,8 +3458,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3467,16 +3467,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="84">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 137" />
+										<ParameterId Value="1137" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="84" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21572">
 												<LockEnvelope Value="0" />
@@ -3486,8 +3486,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -3495,16 +3495,16 @@
 										</LastInternalRange>
 									</PluginFloatParameter>
 									<PluginFloatParameter Id="85">
-										<ParameterName Value="" />
-										<ParameterId Value="-1" />
+										<ParameterName Value="Fader 138" />
+										<ParameterId Value="1138" />
 										<ParameterIdFlankBool Value="false" />
-										<VisualIndex Value="1073741823" />
+										<VisualIndex Value="85" />
 										<ParameterValue>
 											<LomId Value="0" />
-											<Manual Value="0.1234567687" />
+											<Manual Value="0" />
 											<MidiControllerRange>
 												<Min Value="0" />
-												<Max Value="1" />
+												<Max Value="255" />
 											</MidiControllerRange>
 											<AutomationTarget Id="21574">
 												<LockEnvelope Value="0" />
@@ -3514,8 +3514,8 @@
 											</ModulationTarget>
 										</ParameterValue>
 										<LastUserRange>
-											<First Value="Invalid" />
-											<Last Value="Invalid" />
+											<First Value="0" />
+											<Last Value="255" />
 										</LastUserRange>
 										<LastInternalRange>
 											<First Value="0" />
@@ -5543,7 +5543,7 @@
 					<FollowTime Value="4" />
 					<IsLinked Value="true" />
 					<LoopIterations Value="1" />
-					<FollowActionA Value="0" />
+					<FollowActionA Value="4" />
 					<FollowActionB Value="0" />
 					<FollowChanceA Value="100" />
 					<FollowChanceB Value="0" />
@@ -5551,7 +5551,7 @@
 					<JumpIndexB Value="1" />
 					<FollowActionEnabled Value="false" />
 				</FollowAction>
-				<Name Value=" 5" />
+				<Name Value="" />
 				<Annotation Value="" />
 				<Color Value="-1" />
 				<Tempo Value="120" />
@@ -5566,7 +5566,7 @@
 					<FollowTime Value="4" />
 					<IsLinked Value="true" />
 					<LoopIterations Value="1" />
-					<FollowActionA Value="0" />
+					<FollowActionA Value="4" />
 					<FollowActionB Value="0" />
 					<FollowChanceA Value="100" />
 					<FollowChanceB Value="0" />
@@ -5574,7 +5574,7 @@
 					<JumpIndexB Value="1" />
 					<FollowActionEnabled Value="false" />
 				</FollowAction>
-				<Name Value=" 6" />
+				<Name Value="" />
 				<Annotation Value="" />
 				<Color Value="-1" />
 				<Tempo Value="120" />
@@ -5589,7 +5589,7 @@
 					<FollowTime Value="4" />
 					<IsLinked Value="true" />
 					<LoopIterations Value="1" />
-					<FollowActionA Value="0" />
+					<FollowActionA Value="4" />
 					<FollowActionB Value="0" />
 					<FollowChanceA Value="100" />
 					<FollowChanceB Value="0" />
@@ -5597,7 +5597,7 @@
 					<JumpIndexB Value="1" />
 					<FollowActionEnabled Value="false" />
 				</FollowAction>
-				<Name Value=" 7" />
+				<Name Value="" />
 				<Annotation Value="" />
 				<Color Value="-1" />
 				<Tempo Value="120" />
@@ -5612,7 +5612,7 @@
 					<FollowTime Value="4" />
 					<IsLinked Value="true" />
 					<LoopIterations Value="1" />
-					<FollowActionA Value="0" />
+					<FollowActionA Value="4" />
 					<FollowActionB Value="0" />
 					<FollowChanceA Value="100" />
 					<FollowChanceB Value="0" />
@@ -5620,7 +5620,7 @@
 					<JumpIndexB Value="1" />
 					<FollowActionEnabled Value="false" />
 				</FollowAction>
-				<Name Value=" 8" />
+				<Name Value="" />
 				<Annotation Value="" />
 				<Color Value="-1" />
 				<Tempo Value="120" />
@@ -5635,7 +5635,7 @@
 					<FollowTime Value="4" />
 					<IsLinked Value="true" />
 					<LoopIterations Value="1" />
-					<FollowActionA Value="0" />
+					<FollowActionA Value="4" />
 					<FollowActionB Value="0" />
 					<FollowChanceA Value="100" />
 					<FollowChanceB Value="0" />
@@ -5643,7 +5643,7 @@
 					<JumpIndexB Value="1" />
 					<FollowActionEnabled Value="false" />
 				</FollowAction>
-				<Name Value="blablubb" />
+				<Name Value="" />
 				<Annotation Value="" />
 				<Color Value="-1" />
 				<Tempo Value="120" />
@@ -5658,7 +5658,7 @@
 					<FollowTime Value="4" />
 					<IsLinked Value="true" />
 					<LoopIterations Value="1" />
-					<FollowActionA Value="0" />
+					<FollowActionA Value="4" />
 					<FollowActionB Value="0" />
 					<FollowChanceA Value="100" />
 					<FollowChanceB Value="0" />
@@ -5666,7 +5666,7 @@
 					<JumpIndexB Value="1" />
 					<FollowActionEnabled Value="false" />
 				</FollowAction>
-				<Name Value="meine_szene" />
+				<Name Value="" />
 				<Annotation Value="" />
 				<Color Value="-1" />
 				<Tempo Value="120" />
@@ -5819,10 +5819,10 @@
 		<ShowVideoWindow Value="true" />
 		<TuningSystems />
 		<TrackHeaderWidth Value="93" />
-		<ViewStateMainWindowClipDetailOpen Value="false" />
+		<ViewStateMainWindowClipDetailOpen Value="true" />
 		<ViewStateMainWindowHiddenOtherDocViewTypeClipDetailOpen Value="true" />
 		<ViewStateMainWindowHiddenOtherDocViewTypeDeviceDetailOpen Value="false" />
-		<ViewStateMainWindowDeviceDetailOpen Value="true" />
+		<ViewStateMainWindowDeviceDetailOpen Value="false" />
 		<ViewStateSecondWindowClipDetailOpen Value="false" />
 		<ViewStateSecondWindowDeviceDetailOpen Value="false" />
 		<ViewStates>
@@ -5853,18 +5853,18 @@
 			<PitchFilterAlgorithm Id="0">
 				<NamedKeyMidiRemoteables />
 				<PitchClasses>
-					<RemoteableBool Id="384" Value="false" />
-					<RemoteableBool Id="385" Value="false" />
-					<RemoteableBool Id="386" Value="false" />
-					<RemoteableBool Id="387" Value="false" />
-					<RemoteableBool Id="388" Value="false" />
-					<RemoteableBool Id="389" Value="false" />
-					<RemoteableBool Id="390" Value="false" />
-					<RemoteableBool Id="391" Value="false" />
-					<RemoteableBool Id="392" Value="false" />
-					<RemoteableBool Id="393" Value="false" />
-					<RemoteableBool Id="394" Value="false" />
-					<RemoteableBool Id="395" Value="false" />
+					<RemoteableBool Id="1104" Value="false" />
+					<RemoteableBool Id="1105" Value="false" />
+					<RemoteableBool Id="1106" Value="false" />
+					<RemoteableBool Id="1107" Value="false" />
+					<RemoteableBool Id="1108" Value="false" />
+					<RemoteableBool Id="1109" Value="false" />
+					<RemoteableBool Id="1110" Value="false" />
+					<RemoteableBool Id="1111" Value="false" />
+					<RemoteableBool Id="1112" Value="false" />
+					<RemoteableBool Id="1113" Value="false" />
+					<RemoteableBool Id="1114" Value="false" />
+					<RemoteableBool Id="1115" Value="false" />
 				</PitchClasses>
 				<DrumPad Value="128" />
 				<Invert Value="false" />
@@ -5878,11 +5878,11 @@
 			</TimeFilterAlgorithm>
 			<ArpeggiateAlgorithm Id="2">
 				<NamedKeyMidiRemoteables>
-					<NamedRemoteableKeyMidi Id="10" Name="Rate" />
-					<NamedRemoteableKeyMidi Id="11" Name="Steps" />
-					<NamedRemoteableKeyMidi Id="12" Name="Distance" />
-					<NamedRemoteableKeyMidi Id="13" Name="Gate" />
-					<NamedRemoteableKeyMidi Id="14" Name="Style" />
+					<NamedRemoteableKeyMidi Id="30" Name="Rate" />
+					<NamedRemoteableKeyMidi Id="31" Name="Steps" />
+					<NamedRemoteableKeyMidi Id="32" Name="Distance" />
+					<NamedRemoteableKeyMidi Id="33" Name="Gate" />
+					<NamedRemoteableKeyMidi Id="34" Name="Style" />
 				</NamedKeyMidiRemoteables>
 				<Rate Value="10" />
 				<Steps Value="2" />
@@ -5892,20 +5892,20 @@
 			</ArpeggiateAlgorithm>
 			<RhythmAlgorithm Id="3">
 				<NamedKeyMidiRemoteables>
-					<NamedRemoteableKeyMidi Id="28" Name="Density" />
-					<NamedRemoteableKeyMidi Id="29" Name="Repetitions" />
-					<NamedRemoteableKeyMidi Id="30" Name="Pattern" />
-					<NamedRemoteableKeyMidi Id="31" Name="Steps" />
-					<NamedRemoteableKeyMidi Id="32" Name="Pitch" />
-					<NamedRemoteableKeyMidi Id="33" Name="Velocity" />
-					<NamedRemoteableKeyMidi Id="34" Name="Accent" />
-					<NamedRemoteableKeyMidi Id="35" Name="Period" />
-					<NamedRemoteableKeyMidi Id="36" Name="Offset" />
-					<NamedRemoteableKeyMidi Id="37" Name="Shift" />
-					<NamedRemoteableKeyMidi Id="38" Name="StepDuration" />
-					<NamedRemoteableKeyMidi Id="39" Name="Split" />
-					<NamedRemoteableKeyMidi Id="40" Name="VelocityOffsetIncrement" />
-					<NamedRemoteableKeyMidi Id="41" Name="VelocityOffsetDecrement" />
+					<NamedRemoteableKeyMidi Id="84" Name="Density" />
+					<NamedRemoteableKeyMidi Id="85" Name="Repetitions" />
+					<NamedRemoteableKeyMidi Id="86" Name="Pattern" />
+					<NamedRemoteableKeyMidi Id="87" Name="Steps" />
+					<NamedRemoteableKeyMidi Id="88" Name="Pitch" />
+					<NamedRemoteableKeyMidi Id="89" Name="Velocity" />
+					<NamedRemoteableKeyMidi Id="90" Name="Accent" />
+					<NamedRemoteableKeyMidi Id="91" Name="Period" />
+					<NamedRemoteableKeyMidi Id="92" Name="Offset" />
+					<NamedRemoteableKeyMidi Id="93" Name="Shift" />
+					<NamedRemoteableKeyMidi Id="94" Name="StepDuration" />
+					<NamedRemoteableKeyMidi Id="95" Name="Split" />
+					<NamedRemoteableKeyMidi Id="96" Name="VelocityOffsetIncrement" />
+					<NamedRemoteableKeyMidi Id="97" Name="VelocityOffsetDecrement" />
 				</NamedKeyMidiRemoteables>
 				<Density Value="4" />
 				<Repetitions Value="1" />

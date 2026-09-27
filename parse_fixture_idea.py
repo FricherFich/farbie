@@ -1,7 +1,19 @@
-from dmx_channel_mapping import find_dmxis_channel_mapping, get_red_channel_by_fixture_name
+from dmx_channel_mapping import (
+    find_dmxis_channel_mapping,
+    get_red_channel_by_fixture_name,
+    get_laser_velocity_channel,
+    get_laser_direction_channel
+)
 from constants import ur_filename
 
-def convert_to_number(s):
+DIRECTION_MAPPING = {
+    "R": 0,  # Clockwise
+    "0": 150,  # No rotation
+    "L": 255  # Counter clockwise
+}
+
+
+def convert_to_number(s: str):
     try:
         return int(s)
     except ValueError:
@@ -11,132 +23,147 @@ def convert_to_number(s):
             print(f"Error: {s} kann nicht in eine Zahl umgewandelt werden!")
             return None
 
-def fixture_idea_to_fixture_idea_dict_old(file_name_fixture_idea):
-    # Resultierende Liste initialisieren
-    result = []
-    
-    # Datei öffnen
-    with open(file_name_fixture_idea, 'r') as file:
-        # Alle Zeilen lesen
-        lines = file.readlines()
-        
-        # Jede Zeile durchgehen
-        for line in lines:
-            # Einzelne Tupel trennen (entweder durch Semikolon oder Zeilenumbruch getrennt)
-            tuples = line.strip().split(';')
-            
-            # Jedes Tupel durchgehen
-            for tuple in tuples:
-                # Teile des Tupels trennen
-                parts = tuple.split(':')
-                fixture_identifier = parts[0]
-                position = convert_to_number(parts[1])
-                
-                # RGB-Werte trennen
-                rgb = parts[2].split('-')
-                red = int(rgb[0])
-                green = int(rgb[1])
-                blue = int(rgb[2])
-                
-                # Neues Dictionary erstellen und zur Liste hinzufügen
-                result.append({"fixture_identifier": fixture_identifier, 
-                               "position": position, 
-                               "red": red, 
-                               "green": green, 
-                               "blue": blue})
-    return result
 
-
-def parse_hex_color(color):
+def parse_hex_color(color: str):
     red = int(color[0:2], 16)
     green = int(color[2:4], 16)
     blue = int(color[4:6], 16)
     return red, green, blue
 
-def fixture_idea_to_fixture_idea_dict(file_name, stuetzstelle:str):
-    # Resultierende Liste initialisieren
+
+def apply_zero_order_hold(data_points: list) -> list:
+    """Hält den vorherigen Wert bis exakt vor den nächsten Stützpunkt (Sprungfunktion)."""
+    if len(data_points) <= 1:
+        return data_points
+
+    enhanced_list = []
+    for i in range(len(data_points) - 1):
+        enhanced_list.append(data_points[i])
+        this_pos_str, this_val = data_points[i].split('#')
+        next_pos_str, _ = data_points[i + 1].split('#')
+
+        if float(this_pos_str) < float(next_pos_str):
+            enhanced_list.append(f"{next_pos_str}#{this_val}")
+
+    enhanced_list.append(data_points[-1])
+    return enhanced_list
+
+
+def fixture_idea_to_fixture_idea_dict(file_name: str):
     result = []
-    
-    # Datei öffnen
-    with open(file_name, 'r') as file:
-        # Alle Zeilen lesen und Leerzeilen ignorieren
+
+    with open(file_name, 'r', encoding='utf-8') as file:
         lines = [line.strip() for line in file if line.strip()]
+        lines = [line for line in lines if not line.startswith('//')]
 
-        lines = [line for line in lines if not line.strip().startswith('//')] #filtere //-Zeilen als Kommentarzeilen
-        
-        # Jede Zeile durchgehen
         for line in lines:
-            # Einzelne fixture_identifiers und Datenpunkte trennen
-            fixture_identifier, data_points_str = line.strip().split(':')
-            
-
-            # leerzeichen entfernen
+            fixture_identifier, data_points_str = line.split(':')
+            fixture_identifier = fixture_identifier.strip()
             data_points_str = data_points_str.replace(" ", "")
+            data_points = [dp for dp in data_points_str.split(';') if dp]
 
-            # Einzelne Datenpunkte trennen
-            data_points = data_points_str.split(';')
+            is_direction = fixture_identifier.endswith("_Direction")
+            is_velocity = fixture_identifier.endswith("_Velocity")
 
-            if stuetzstelle == "first-order":
-                pass
-            elif stuetzstelle == "zero-order":
-                enhanced_list = []
-                for i, data_point in enumerate(data_points[:-1]):
-                    enhanced_list.append(data_point)
-                    this_position_str, this_color_str = data_points[i].split('#')
-                    next_position_str, next_color_str = data_points[i+1].split("#")
-                    enhanced_list.append(f"{next_position_str}#{this_color_str}") #dieser Color wird bis zur nächsten Position weitergeführt
-                enhanced_list.append(data_points[-1]) # letzter Punkt wird einfach übernommen
-                data_points = enhanced_list.copy()
+            # Direction ist per Spezifikation immer eine Stufenfunktion
+            if is_direction:
+                data_points = apply_zero_order_hold(data_points)
 
-            else:
-                raise ValueError(f"stuetzstelle = {stuetzstelle} ist unbekannt")
-            
-            # Jeden Datenpunkt durchgehen
             for data_point in data_points:
-                # Teile des Datenpunkts trennen
-                position_str, color_str = data_point.split('#')
+                position_str, val_str = data_point.split('#')
                 position = convert_to_number(position_str)
-                
-                # RGB-Werte trennen und von Hexadezimal in Dezimal umwandeln
-                red, green, blue = parse_hex_color(color_str)
-                
-                # Neues Dictionary erstellen und zur Liste hinzufügen
-                result.append({"fixture_identifier": fixture_identifier, 
-                               "position": position, 
-                               "red": red, 
-                               "green": green, 
-                               "blue": blue})
+
+                if is_direction:
+                    dir_key = val_str.upper()
+                    if dir_key not in DIRECTION_MAPPING:
+                        raise ValueError(f"Ungültige Direction '{val_str}' in: {line}")
+                    result.append({
+                        "fixture_identifier": fixture_identifier,
+                        "type": "direction",
+                        "position": position,
+                        "value": DIRECTION_MAPPING[dir_key]
+                    })
+
+                elif is_velocity:
+                    vel_val = int(val_str)
+                    if not (0 <= vel_val <= 255):
+                        raise ValueError(f"Velocity {vel_val} außerhalb 0-255 in: {line}")
+                    result.append({
+                        "fixture_identifier": fixture_identifier,
+                        "type": "velocity",
+                        "position": position,
+                        "value": vel_val
+                    })
+
+                else:
+                    red, green, blue = parse_hex_color(val_str)
+                    result.append({
+                        "fixture_identifier": fixture_identifier,
+                        "type": "rgb",
+                        "position": position,
+                        "red": red,
+                        "green": green,
+                        "blue": blue
+                    })
+
     return result
 
 
-
-def identify_clip_length(fixture_idea_file:str, stuetzstelle:str):
-    list_ = fixture_idea_to_fixture_idea_dict(fixture_idea_file, stuetzstelle)
-    max_length = 0
-    for single_dict in list_:
-        the_position = single_dict.get("position")
-        if the_position > max_length:
-            max_length = the_position
-    return max_length
+def identify_clip_length(fixture_idea_file: str):
+    data = fixture_idea_to_fixture_idea_dict(fixture_idea_file)
+    return max((item["position"] for item in data), default=0)
 
 
-def split_fixture_idea_dict_into_channels(fixture_idea_dict:list):
+def split_fixture_idea_dict_into_channels(fixture_idea_dict: list):
     channel_specific_list = []
     dmxis_channel_to_automation_target = find_dmxis_channel_mapping(ur_filename())
-    for single_fixture_move in fixture_idea_dict:
-        fixture_name = single_fixture_move["fixture_identifier"]
-        fixture_red_dmx_channel = get_red_channel_by_fixture_name(fixture_name)
-        fixture_dmx_channels = {"red": fixture_red_dmx_channel,
-                            "green": fixture_red_dmx_channel+1,
-                            "blue": fixture_red_dmx_channel+2}
-        fixture_automation_target = {k: dmxis_channel_to_automation_target["Fader "+str(v)] for k,v in fixture_dmx_channels.items()}
 
-        for single_color_channel_name in ["red", "green", "blue"]:
-            payload = {
-                "automation_pointee_id": fixture_automation_target[single_color_channel_name],
-                "time": single_fixture_move["position"],
-                "value": single_fixture_move[single_color_channel_name]  # Echter DMX-Wert 0 bis 255
+    for move in fixture_idea_dict:
+        fixture_name = move["fixture_identifier"]
+        move_type = move.get("type", "rgb")
+
+        if move_type == "rgb":
+            red_channel = get_red_channel_by_fixture_name(fixture_name)
+            if red_channel is None:
+                raise ValueError(f"Unbekanntes RGB-Gerät: {fixture_name}")
+
+            color_channels = {
+                "red": red_channel,
+                "green": red_channel + 1,
+                "blue": red_channel + 2
             }
-            channel_specific_list.append(payload)
+            for color_name, dmx_nr in color_channels.items():
+                fader_key = f"Fader {dmx_nr}"
+                if fader_key not in dmxis_channel_to_automation_target:
+                    raise KeyError(f"{fader_key} nicht im Ableton-Template gefunden!")
+                channel_specific_list.append({
+                    "automation_pointee_id": dmxis_channel_to_automation_target[fader_key],
+                    "time": move["position"],
+                    "value": move[color_name]
+                })
+
+        elif move_type == "velocity":
+            laser_base = fixture_name.replace("_Velocity", "")
+            dmx_nr = get_laser_velocity_channel(laser_base)
+            if dmx_nr is None:
+                raise ValueError(f"Unbekannter Laser für Velocity: {fixture_name}")
+
+            channel_specific_list.append({
+                "automation_pointee_id": dmxis_channel_to_automation_target[fader_key := f"Fader {dmx_nr}"],
+                "time": move["position"],
+                "value": move["value"]
+            })
+
+        elif move_type == "direction":
+            laser_base = fixture_name.replace("_Direction", "")
+            dmx_nr = get_laser_direction_channel(laser_base)
+            if dmx_nr is None:
+                raise ValueError(f"Unbekannter Laser für Direction: {fixture_name}")
+
+            channel_specific_list.append({
+                "automation_pointee_id": dmxis_channel_to_automation_target[fader_key := f"Fader {dmx_nr}"],
+                "time": move["position"],
+                "value": move["value"]
+            })
 
     return channel_specific_list
