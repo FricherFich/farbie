@@ -43,6 +43,11 @@ Laser4_Direction:0#L;4#R;8#L;12#R;16#L"""
 # ============================================================================== 
 # TRACK KLASSEN & DSL-PARSER
 # ============================================================================== 
+
+# Real-life laser rotation: max velocity = 360° turn in ~6 seconds.
+# This represents 1 full rotation every 6 seconds = 2π / 6 rad/s at max velocity.
+MAX_LASER_TURN_SECONDS = 6.0
+
 def hex_to_rgb(hex_str: str) -> tuple[int, int, int]:
     hex_str = hex_str.strip().lstrip('#')
     if len(hex_str) != 6:
@@ -740,7 +745,7 @@ class LightingPreviewer5:
                 for lname in self.lasers:
                     _, vel, direction = self.get_laser_state(lname)
                     dir_sign = 1.0 if direction == 'R' else (-1.0 if direction == 'L' else 0.0)
-                    angular_speed = dir_sign * (vel / 255.0) * (2.0 * math.pi * 1.8)
+                    angular_speed = dir_sign * (vel / 255.0) * (2.0 * math.pi / MAX_LASER_TURN_SECONDS)
                     self.laser_angles[lname] = (self.laser_angles[lname] + angular_speed * dt) % (2.0 * math.pi)
             self.timeline_slider.val = self.current_beat
             self.prev_scrub_beat = self.current_beat
@@ -752,7 +757,7 @@ class LightingPreviewer5:
             for lname in self.lasers:
                 _, vel, direction = self.get_laser_state(lname)
                 dir_sign = 1.0 if direction == 'R' else (-1.0 if direction == 'L' else 0.0)
-                angular_speed = dir_sign * (vel / 255.0) * (2.0 * math.pi * 1.8)
+                angular_speed = dir_sign * (vel / 255.0) * (2.0 * math.pi / MAX_LASER_TURN_SECONDS)
                 self.laser_angles[lname] = (self.laser_angles[lname] + angular_speed * sim_dt) % (2.0 * math.pi)
             self.prev_scrub_beat = self.current_beat
 

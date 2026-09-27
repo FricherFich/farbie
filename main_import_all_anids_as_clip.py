@@ -3,11 +3,6 @@ import os
 from datetime import datetime
 from append_as_clip_to_file import add_fixture_idea_as_clip_to_ableton_project
 
-source_folder = "ANIDs_not_imported"
-dest_folder = "ANIDs_imported"
-project_folder = "vierter_versuch Project"
-
-
 def finde_letzte_als_datei(im_ordner):
     alle_als_dateien = [f for f in os.listdir(im_ordner) if f.endswith('.als')]
     if not alle_als_dateien:
@@ -54,8 +49,8 @@ def verarbeite_txt_dateien(quellordner, zielordner, workdir_project):
 
 
 if __name__ == "__main__":
-    source_folder_txt_files = "ANIDs_not_imported"
-    dest_folder_txt_files = "ANIDs_imported"
+    source_folder_txt_files = "effects/waltz"
+    dest_folder_txt_files = "tmp"
     workdir_ableton_project = "output"
     verarbeite_txt_dateien(source_folder_txt_files, dest_folder_txt_files, workdir_ableton_project)
 

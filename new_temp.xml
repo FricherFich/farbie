@@ -2063,7 +2063,1447 @@
 							<ClipSlot Id="2">
 								<LomId Value="0"/>
 								<ClipSlot>
-									<Value/>
+									<Value>
+										<MidiClip Id="3" Time="0">
+											<LomId Value="0"/>
+											<LomIdView Value="0"/>
+											<CurrentStart Value="0"/>
+											<CurrentEnd Value="24"/>
+											<Loop>
+												<LoopStart Value="0"/>
+												<LoopEnd Value="24"/>
+												<StartRelative Value="0"/>
+												<LoopOn Value="true"/>
+												<OutMarker Value="24"/>
+												<HiddenLoopStart Value="0"/>
+												<HiddenLoopEnd Value="4"/>
+											</Loop>
+											<Name Value="waltz_intro1"/>
+											<Annotation Value=""/>
+											<Color Value="13"/>
+											<LaunchMode Value="0"/>
+											<LaunchQuantisation Value="0"/>
+											<TimeSignature>
+												<TimeSignatures>
+													<RemoteableTimeSignature Id="0">
+														<Numerator Value="4"/>
+														<Denominator Value="4"/>
+														<Time Value="0"/>
+													</RemoteableTimeSignature>
+												</TimeSignatures>
+											</TimeSignature>
+											<Envelopes>
+												<Envelopes>
+													<ClipEnvelope Id="2">
+														<EnvelopeTarget>
+															<PointeeId Value="21536"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="28"/>
+																<FloatEvent Id="2" Time="24" Value="28"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="3">
+														<EnvelopeTarget>
+															<PointeeId Value="21492"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="51"/>
+																<FloatEvent Id="2" Time="1.5" Value="255"/>
+																<FloatEvent Id="3" Time="3" Value="255"/>
+																<FloatEvent Id="4" Time="4.5" Value="255"/>
+																<FloatEvent Id="5" Time="6" Value="255"/>
+																<FloatEvent Id="6" Time="7.5" Value="0"/>
+																<FloatEvent Id="7" Time="9" Value="0"/>
+																<FloatEvent Id="8" Time="10.5" Value="0"/>
+																<FloatEvent Id="9" Time="12" Value="255"/>
+																<FloatEvent Id="10" Time="13.5" Value="255"/>
+																<FloatEvent Id="11" Time="15" Value="255"/>
+																<FloatEvent Id="12" Time="16.5" Value="255"/>
+																<FloatEvent Id="13" Time="18" Value="0"/>
+																<FloatEvent Id="14" Time="19.5" Value="0"/>
+																<FloatEvent Id="15" Time="21" Value="0"/>
+																<FloatEvent Id="16" Time="22.5" Value="255"/>
+																<FloatEvent Id="17" Time="24" Value="51"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="4">
+														<EnvelopeTarget>
+															<PointeeId Value="21560"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="34"/>
+																<FloatEvent Id="3" Time="3" Value="102"/>
+																<FloatEvent Id="4" Time="4.5" Value="170"/>
+																<FloatEvent Id="5" Time="6" Value="34"/>
+																<FloatEvent Id="6" Time="7.5" Value="102"/>
+																<FloatEvent Id="7" Time="9" Value="51"/>
+																<FloatEvent Id="8" Time="10.5" Value="68"/>
+																<FloatEvent Id="9" Time="12" Value="34"/>
+																<FloatEvent Id="10" Time="13.5" Value="102"/>
+																<FloatEvent Id="11" Time="15" Value="170"/>
+																<FloatEvent Id="12" Time="16.5" Value="34"/>
+																<FloatEvent Id="13" Time="18" Value="102"/>
+																<FloatEvent Id="14" Time="19.5" Value="51"/>
+																<FloatEvent Id="15" Time="21" Value="68"/>
+																<FloatEvent Id="16" Time="22.5" Value="34"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="5">
+														<EnvelopeTarget>
+															<PointeeId Value="21496"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="0"/>
+																<FloatEvent Id="3" Time="3" Value="0"/>
+																<FloatEvent Id="4" Time="4.5" Value="0"/>
+																<FloatEvent Id="5" Time="6" Value="0"/>
+																<FloatEvent Id="6" Time="7.5" Value="255"/>
+																<FloatEvent Id="7" Time="9" Value="204"/>
+																<FloatEvent Id="8" Time="10.5" Value="255"/>
+																<FloatEvent Id="9" Time="12" Value="0"/>
+																<FloatEvent Id="10" Time="13.5" Value="0"/>
+																<FloatEvent Id="11" Time="15" Value="0"/>
+																<FloatEvent Id="12" Time="16.5" Value="0"/>
+																<FloatEvent Id="13" Time="18" Value="255"/>
+																<FloatEvent Id="14" Time="19.5" Value="204"/>
+																<FloatEvent Id="15" Time="21" Value="255"/>
+																<FloatEvent Id="16" Time="22.5" Value="0"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="6">
+														<EnvelopeTarget>
+															<PointeeId Value="21568"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="0"/>
+																<FloatEvent Id="3" Time="3" Value="0"/>
+																<FloatEvent Id="4" Time="4.5" Value="0"/>
+																<FloatEvent Id="5" Time="6" Value="0"/>
+																<FloatEvent Id="6" Time="7.5" Value="255"/>
+																<FloatEvent Id="7" Time="9" Value="204"/>
+																<FloatEvent Id="8" Time="10.5" Value="255"/>
+																<FloatEvent Id="9" Time="12" Value="0"/>
+																<FloatEvent Id="10" Time="13.5" Value="0"/>
+																<FloatEvent Id="11" Time="15" Value="0"/>
+																<FloatEvent Id="12" Time="16.5" Value="0"/>
+																<FloatEvent Id="13" Time="18" Value="255"/>
+																<FloatEvent Id="14" Time="19.5" Value="204"/>
+																<FloatEvent Id="15" Time="21" Value="255"/>
+																<FloatEvent Id="16" Time="22.5" Value="0"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="7">
+														<EnvelopeTarget>
+															<PointeeId Value="21562"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="0"/>
+																<FloatEvent Id="3" Time="3" Value="0"/>
+																<FloatEvent Id="4" Time="4.5" Value="0"/>
+																<FloatEvent Id="5" Time="6" Value="0"/>
+																<FloatEvent Id="6" Time="7.5" Value="255"/>
+																<FloatEvent Id="7" Time="9" Value="204"/>
+																<FloatEvent Id="8" Time="10.5" Value="255"/>
+																<FloatEvent Id="9" Time="12" Value="0"/>
+																<FloatEvent Id="10" Time="13.5" Value="0"/>
+																<FloatEvent Id="11" Time="15" Value="0"/>
+																<FloatEvent Id="12" Time="16.5" Value="0"/>
+																<FloatEvent Id="13" Time="18" Value="255"/>
+																<FloatEvent Id="14" Time="19.5" Value="204"/>
+																<FloatEvent Id="15" Time="21" Value="255"/>
+																<FloatEvent Id="16" Time="22.5" Value="0"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="8">
+														<EnvelopeTarget>
+															<PointeeId Value="21520"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="34"/>
+																<FloatEvent Id="3" Time="3" Value="102"/>
+																<FloatEvent Id="4" Time="4.5" Value="170"/>
+																<FloatEvent Id="5" Time="6" Value="34"/>
+																<FloatEvent Id="6" Time="7.5" Value="102"/>
+																<FloatEvent Id="7" Time="9" Value="51"/>
+																<FloatEvent Id="8" Time="10.5" Value="68"/>
+																<FloatEvent Id="9" Time="12" Value="34"/>
+																<FloatEvent Id="10" Time="13.5" Value="102"/>
+																<FloatEvent Id="11" Time="15" Value="170"/>
+																<FloatEvent Id="12" Time="16.5" Value="34"/>
+																<FloatEvent Id="13" Time="18" Value="102"/>
+																<FloatEvent Id="14" Time="19.5" Value="51"/>
+																<FloatEvent Id="15" Time="21" Value="68"/>
+																<FloatEvent Id="16" Time="22.5" Value="34"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="9">
+														<EnvelopeTarget>
+															<PointeeId Value="21532"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="34"/>
+																<FloatEvent Id="3" Time="3" Value="102"/>
+																<FloatEvent Id="4" Time="4.5" Value="170"/>
+																<FloatEvent Id="5" Time="6" Value="34"/>
+																<FloatEvent Id="6" Time="7.5" Value="102"/>
+																<FloatEvent Id="7" Time="9" Value="51"/>
+																<FloatEvent Id="8" Time="10.5" Value="68"/>
+																<FloatEvent Id="9" Time="12" Value="34"/>
+																<FloatEvent Id="10" Time="13.5" Value="102"/>
+																<FloatEvent Id="11" Time="15" Value="170"/>
+																<FloatEvent Id="12" Time="16.5" Value="34"/>
+																<FloatEvent Id="13" Time="18" Value="102"/>
+																<FloatEvent Id="14" Time="19.5" Value="51"/>
+																<FloatEvent Id="15" Time="21" Value="68"/>
+																<FloatEvent Id="16" Time="22.5" Value="34"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="10">
+														<EnvelopeTarget>
+															<PointeeId Value="21554"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="34"/>
+																<FloatEvent Id="3" Time="3" Value="102"/>
+																<FloatEvent Id="4" Time="4.5" Value="170"/>
+																<FloatEvent Id="5" Time="6" Value="34"/>
+																<FloatEvent Id="6" Time="7.5" Value="102"/>
+																<FloatEvent Id="7" Time="9" Value="51"/>
+																<FloatEvent Id="8" Time="10.5" Value="68"/>
+																<FloatEvent Id="9" Time="12" Value="34"/>
+																<FloatEvent Id="10" Time="13.5" Value="102"/>
+																<FloatEvent Id="11" Time="15" Value="170"/>
+																<FloatEvent Id="12" Time="16.5" Value="34"/>
+																<FloatEvent Id="13" Time="18" Value="102"/>
+																<FloatEvent Id="14" Time="19.5" Value="51"/>
+																<FloatEvent Id="15" Time="21" Value="68"/>
+																<FloatEvent Id="16" Time="22.5" Value="34"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="11">
+														<EnvelopeTarget>
+															<PointeeId Value="21542"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="34"/>
+																<FloatEvent Id="3" Time="3" Value="102"/>
+																<FloatEvent Id="4" Time="4.5" Value="170"/>
+																<FloatEvent Id="5" Time="6" Value="34"/>
+																<FloatEvent Id="6" Time="7.5" Value="102"/>
+																<FloatEvent Id="7" Time="9" Value="51"/>
+																<FloatEvent Id="8" Time="10.5" Value="68"/>
+																<FloatEvent Id="9" Time="12" Value="34"/>
+																<FloatEvent Id="10" Time="13.5" Value="102"/>
+																<FloatEvent Id="11" Time="15" Value="170"/>
+																<FloatEvent Id="12" Time="16.5" Value="34"/>
+																<FloatEvent Id="13" Time="18" Value="102"/>
+																<FloatEvent Id="14" Time="19.5" Value="51"/>
+																<FloatEvent Id="15" Time="21" Value="68"/>
+																<FloatEvent Id="16" Time="22.5" Value="34"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="12">
+														<EnvelopeTarget>
+															<PointeeId Value="21530"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="51"/>
+																<FloatEvent Id="2" Time="1.5" Value="255"/>
+																<FloatEvent Id="3" Time="3" Value="255"/>
+																<FloatEvent Id="4" Time="4.5" Value="255"/>
+																<FloatEvent Id="5" Time="6" Value="255"/>
+																<FloatEvent Id="6" Time="7.5" Value="0"/>
+																<FloatEvent Id="7" Time="9" Value="0"/>
+																<FloatEvent Id="8" Time="10.5" Value="0"/>
+																<FloatEvent Id="9" Time="12" Value="255"/>
+																<FloatEvent Id="10" Time="13.5" Value="255"/>
+																<FloatEvent Id="11" Time="15" Value="255"/>
+																<FloatEvent Id="12" Time="16.5" Value="255"/>
+																<FloatEvent Id="13" Time="18" Value="0"/>
+																<FloatEvent Id="14" Time="19.5" Value="0"/>
+																<FloatEvent Id="15" Time="21" Value="0"/>
+																<FloatEvent Id="16" Time="22.5" Value="255"/>
+																<FloatEvent Id="17" Time="24" Value="51"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="13">
+														<EnvelopeTarget>
+															<PointeeId Value="21500"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="24" Value="0"/>
+																<FloatEvent Id="3" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="14">
+														<EnvelopeTarget>
+															<PointeeId Value="21506"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="51"/>
+																<FloatEvent Id="2" Time="1.5" Value="255"/>
+																<FloatEvent Id="3" Time="3" Value="255"/>
+																<FloatEvent Id="4" Time="4.5" Value="255"/>
+																<FloatEvent Id="5" Time="6" Value="255"/>
+																<FloatEvent Id="6" Time="7.5" Value="0"/>
+																<FloatEvent Id="7" Time="9" Value="0"/>
+																<FloatEvent Id="8" Time="10.5" Value="0"/>
+																<FloatEvent Id="9" Time="12" Value="255"/>
+																<FloatEvent Id="10" Time="13.5" Value="255"/>
+																<FloatEvent Id="11" Time="15" Value="255"/>
+																<FloatEvent Id="12" Time="16.5" Value="255"/>
+																<FloatEvent Id="13" Time="18" Value="0"/>
+																<FloatEvent Id="14" Time="19.5" Value="0"/>
+																<FloatEvent Id="15" Time="21" Value="0"/>
+																<FloatEvent Id="16" Time="22.5" Value="255"/>
+																<FloatEvent Id="17" Time="24" Value="51"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="15">
+														<EnvelopeTarget>
+															<PointeeId Value="21552"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="51"/>
+																<FloatEvent Id="2" Time="1.5" Value="255"/>
+																<FloatEvent Id="3" Time="3" Value="255"/>
+																<FloatEvent Id="4" Time="4.5" Value="255"/>
+																<FloatEvent Id="5" Time="6" Value="255"/>
+																<FloatEvent Id="6" Time="7.5" Value="0"/>
+																<FloatEvent Id="7" Time="9" Value="0"/>
+																<FloatEvent Id="8" Time="10.5" Value="0"/>
+																<FloatEvent Id="9" Time="12" Value="255"/>
+																<FloatEvent Id="10" Time="13.5" Value="255"/>
+																<FloatEvent Id="11" Time="15" Value="255"/>
+																<FloatEvent Id="12" Time="16.5" Value="255"/>
+																<FloatEvent Id="13" Time="18" Value="0"/>
+																<FloatEvent Id="14" Time="19.5" Value="0"/>
+																<FloatEvent Id="15" Time="21" Value="0"/>
+																<FloatEvent Id="16" Time="22.5" Value="255"/>
+																<FloatEvent Id="17" Time="24" Value="51"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="16">
+														<EnvelopeTarget>
+															<PointeeId Value="21494"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="34"/>
+																<FloatEvent Id="3" Time="3" Value="102"/>
+																<FloatEvent Id="4" Time="4.5" Value="170"/>
+																<FloatEvent Id="5" Time="6" Value="34"/>
+																<FloatEvent Id="6" Time="7.5" Value="102"/>
+																<FloatEvent Id="7" Time="9" Value="51"/>
+																<FloatEvent Id="8" Time="10.5" Value="68"/>
+																<FloatEvent Id="9" Time="12" Value="34"/>
+																<FloatEvent Id="10" Time="13.5" Value="102"/>
+																<FloatEvent Id="11" Time="15" Value="170"/>
+																<FloatEvent Id="12" Time="16.5" Value="34"/>
+																<FloatEvent Id="13" Time="18" Value="102"/>
+																<FloatEvent Id="14" Time="19.5" Value="51"/>
+																<FloatEvent Id="15" Time="21" Value="68"/>
+																<FloatEvent Id="16" Time="22.5" Value="34"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="17">
+														<EnvelopeTarget>
+															<PointeeId Value="21498"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="28"/>
+																<FloatEvent Id="2" Time="24" Value="28"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="18">
+														<EnvelopeTarget>
+															<PointeeId Value="21556"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="0"/>
+																<FloatEvent Id="3" Time="3" Value="0"/>
+																<FloatEvent Id="4" Time="4.5" Value="0"/>
+																<FloatEvent Id="5" Time="6" Value="0"/>
+																<FloatEvent Id="6" Time="7.5" Value="255"/>
+																<FloatEvent Id="7" Time="9" Value="204"/>
+																<FloatEvent Id="8" Time="10.5" Value="255"/>
+																<FloatEvent Id="9" Time="12" Value="0"/>
+																<FloatEvent Id="10" Time="13.5" Value="0"/>
+																<FloatEvent Id="11" Time="15" Value="0"/>
+																<FloatEvent Id="12" Time="16.5" Value="0"/>
+																<FloatEvent Id="13" Time="18" Value="255"/>
+																<FloatEvent Id="14" Time="19.5" Value="204"/>
+																<FloatEvent Id="15" Time="21" Value="255"/>
+																<FloatEvent Id="16" Time="22.5" Value="0"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="19">
+														<EnvelopeTarget>
+															<PointeeId Value="21534"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="0"/>
+																<FloatEvent Id="3" Time="3" Value="0"/>
+																<FloatEvent Id="4" Time="4.5" Value="0"/>
+																<FloatEvent Id="5" Time="6" Value="0"/>
+																<FloatEvent Id="6" Time="7.5" Value="255"/>
+																<FloatEvent Id="7" Time="9" Value="204"/>
+																<FloatEvent Id="8" Time="10.5" Value="255"/>
+																<FloatEvent Id="9" Time="12" Value="0"/>
+																<FloatEvent Id="10" Time="13.5" Value="0"/>
+																<FloatEvent Id="11" Time="15" Value="0"/>
+																<FloatEvent Id="12" Time="16.5" Value="0"/>
+																<FloatEvent Id="13" Time="18" Value="255"/>
+																<FloatEvent Id="14" Time="19.5" Value="204"/>
+																<FloatEvent Id="15" Time="21" Value="255"/>
+																<FloatEvent Id="16" Time="22.5" Value="0"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="20">
+														<EnvelopeTarget>
+															<PointeeId Value="21564"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="51"/>
+																<FloatEvent Id="2" Time="1.5" Value="255"/>
+																<FloatEvent Id="3" Time="3" Value="255"/>
+																<FloatEvent Id="4" Time="4.5" Value="255"/>
+																<FloatEvent Id="5" Time="6" Value="255"/>
+																<FloatEvent Id="6" Time="7.5" Value="0"/>
+																<FloatEvent Id="7" Time="9" Value="0"/>
+																<FloatEvent Id="8" Time="10.5" Value="0"/>
+																<FloatEvent Id="9" Time="12" Value="255"/>
+																<FloatEvent Id="10" Time="13.5" Value="255"/>
+																<FloatEvent Id="11" Time="15" Value="255"/>
+																<FloatEvent Id="12" Time="16.5" Value="255"/>
+																<FloatEvent Id="13" Time="18" Value="0"/>
+																<FloatEvent Id="14" Time="19.5" Value="0"/>
+																<FloatEvent Id="15" Time="21" Value="0"/>
+																<FloatEvent Id="16" Time="22.5" Value="255"/>
+																<FloatEvent Id="17" Time="24" Value="51"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="21">
+														<EnvelopeTarget>
+															<PointeeId Value="21570"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="51"/>
+																<FloatEvent Id="2" Time="1.5" Value="255"/>
+																<FloatEvent Id="3" Time="3" Value="255"/>
+																<FloatEvent Id="4" Time="4.5" Value="255"/>
+																<FloatEvent Id="5" Time="6" Value="255"/>
+																<FloatEvent Id="6" Time="7.5" Value="0"/>
+																<FloatEvent Id="7" Time="9" Value="0"/>
+																<FloatEvent Id="8" Time="10.5" Value="0"/>
+																<FloatEvent Id="9" Time="12" Value="255"/>
+																<FloatEvent Id="10" Time="13.5" Value="255"/>
+																<FloatEvent Id="11" Time="15" Value="255"/>
+																<FloatEvent Id="12" Time="16.5" Value="255"/>
+																<FloatEvent Id="13" Time="18" Value="0"/>
+																<FloatEvent Id="14" Time="19.5" Value="0"/>
+																<FloatEvent Id="15" Time="21" Value="0"/>
+																<FloatEvent Id="16" Time="22.5" Value="255"/>
+																<FloatEvent Id="17" Time="24" Value="51"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="22">
+														<EnvelopeTarget>
+															<PointeeId Value="21566"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="34"/>
+																<FloatEvent Id="3" Time="3" Value="102"/>
+																<FloatEvent Id="4" Time="4.5" Value="170"/>
+																<FloatEvent Id="5" Time="6" Value="34"/>
+																<FloatEvent Id="6" Time="7.5" Value="102"/>
+																<FloatEvent Id="7" Time="9" Value="51"/>
+																<FloatEvent Id="8" Time="10.5" Value="68"/>
+																<FloatEvent Id="9" Time="12" Value="34"/>
+																<FloatEvent Id="10" Time="13.5" Value="102"/>
+																<FloatEvent Id="11" Time="15" Value="170"/>
+																<FloatEvent Id="12" Time="16.5" Value="34"/>
+																<FloatEvent Id="13" Time="18" Value="102"/>
+																<FloatEvent Id="14" Time="19.5" Value="51"/>
+																<FloatEvent Id="15" Time="21" Value="68"/>
+																<FloatEvent Id="16" Time="22.5" Value="34"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="23">
+														<EnvelopeTarget>
+															<PointeeId Value="21508"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="34"/>
+																<FloatEvent Id="3" Time="3" Value="102"/>
+																<FloatEvent Id="4" Time="4.5" Value="170"/>
+																<FloatEvent Id="5" Time="6" Value="34"/>
+																<FloatEvent Id="6" Time="7.5" Value="102"/>
+																<FloatEvent Id="7" Time="9" Value="51"/>
+																<FloatEvent Id="8" Time="10.5" Value="68"/>
+																<FloatEvent Id="9" Time="12" Value="34"/>
+																<FloatEvent Id="10" Time="13.5" Value="102"/>
+																<FloatEvent Id="11" Time="15" Value="170"/>
+																<FloatEvent Id="12" Time="16.5" Value="34"/>
+																<FloatEvent Id="13" Time="18" Value="102"/>
+																<FloatEvent Id="14" Time="19.5" Value="51"/>
+																<FloatEvent Id="15" Time="21" Value="68"/>
+																<FloatEvent Id="16" Time="22.5" Value="34"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="24">
+														<EnvelopeTarget>
+															<PointeeId Value="21524"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="28"/>
+																<FloatEvent Id="2" Time="24" Value="28"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="25">
+														<EnvelopeTarget>
+															<PointeeId Value="21518"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="51"/>
+																<FloatEvent Id="2" Time="1.5" Value="255"/>
+																<FloatEvent Id="3" Time="3" Value="255"/>
+																<FloatEvent Id="4" Time="4.5" Value="255"/>
+																<FloatEvent Id="5" Time="6" Value="255"/>
+																<FloatEvent Id="6" Time="7.5" Value="0"/>
+																<FloatEvent Id="7" Time="9" Value="0"/>
+																<FloatEvent Id="8" Time="10.5" Value="0"/>
+																<FloatEvent Id="9" Time="12" Value="255"/>
+																<FloatEvent Id="10" Time="13.5" Value="255"/>
+																<FloatEvent Id="11" Time="15" Value="255"/>
+																<FloatEvent Id="12" Time="16.5" Value="255"/>
+																<FloatEvent Id="13" Time="18" Value="0"/>
+																<FloatEvent Id="14" Time="19.5" Value="0"/>
+																<FloatEvent Id="15" Time="21" Value="0"/>
+																<FloatEvent Id="16" Time="22.5" Value="255"/>
+																<FloatEvent Id="17" Time="24" Value="51"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="26">
+														<EnvelopeTarget>
+															<PointeeId Value="21558"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="51"/>
+																<FloatEvent Id="2" Time="1.5" Value="255"/>
+																<FloatEvent Id="3" Time="3" Value="255"/>
+																<FloatEvent Id="4" Time="4.5" Value="255"/>
+																<FloatEvent Id="5" Time="6" Value="255"/>
+																<FloatEvent Id="6" Time="7.5" Value="0"/>
+																<FloatEvent Id="7" Time="9" Value="0"/>
+																<FloatEvent Id="8" Time="10.5" Value="0"/>
+																<FloatEvent Id="9" Time="12" Value="255"/>
+																<FloatEvent Id="10" Time="13.5" Value="255"/>
+																<FloatEvent Id="11" Time="15" Value="255"/>
+																<FloatEvent Id="12" Time="16.5" Value="255"/>
+																<FloatEvent Id="13" Time="18" Value="0"/>
+																<FloatEvent Id="14" Time="19.5" Value="0"/>
+																<FloatEvent Id="15" Time="21" Value="0"/>
+																<FloatEvent Id="16" Time="22.5" Value="255"/>
+																<FloatEvent Id="17" Time="24" Value="51"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="27">
+														<EnvelopeTarget>
+															<PointeeId Value="21548"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="34"/>
+																<FloatEvent Id="3" Time="3" Value="102"/>
+																<FloatEvent Id="4" Time="4.5" Value="170"/>
+																<FloatEvent Id="5" Time="6" Value="34"/>
+																<FloatEvent Id="6" Time="7.5" Value="102"/>
+																<FloatEvent Id="7" Time="9" Value="51"/>
+																<FloatEvent Id="8" Time="10.5" Value="68"/>
+																<FloatEvent Id="9" Time="12" Value="34"/>
+																<FloatEvent Id="10" Time="13.5" Value="102"/>
+																<FloatEvent Id="11" Time="15" Value="170"/>
+																<FloatEvent Id="12" Time="16.5" Value="34"/>
+																<FloatEvent Id="13" Time="18" Value="102"/>
+																<FloatEvent Id="14" Time="19.5" Value="51"/>
+																<FloatEvent Id="15" Time="21" Value="68"/>
+																<FloatEvent Id="16" Time="22.5" Value="34"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="28">
+														<EnvelopeTarget>
+															<PointeeId Value="21512"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="28"/>
+																<FloatEvent Id="2" Time="24" Value="28"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="29">
+														<EnvelopeTarget>
+															<PointeeId Value="21514"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="24" Value="0"/>
+																<FloatEvent Id="3" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="30">
+														<EnvelopeTarget>
+															<PointeeId Value="21538"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="24" Value="0"/>
+																<FloatEvent Id="3" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="31">
+														<EnvelopeTarget>
+															<PointeeId Value="21510"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="0"/>
+																<FloatEvent Id="3" Time="3" Value="0"/>
+																<FloatEvent Id="4" Time="4.5" Value="0"/>
+																<FloatEvent Id="5" Time="6" Value="0"/>
+																<FloatEvent Id="6" Time="7.5" Value="255"/>
+																<FloatEvent Id="7" Time="9" Value="204"/>
+																<FloatEvent Id="8" Time="10.5" Value="255"/>
+																<FloatEvent Id="9" Time="12" Value="0"/>
+																<FloatEvent Id="10" Time="13.5" Value="0"/>
+																<FloatEvent Id="11" Time="15" Value="0"/>
+																<FloatEvent Id="12" Time="16.5" Value="0"/>
+																<FloatEvent Id="13" Time="18" Value="255"/>
+																<FloatEvent Id="14" Time="19.5" Value="204"/>
+																<FloatEvent Id="15" Time="21" Value="255"/>
+																<FloatEvent Id="16" Time="22.5" Value="0"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="32">
+														<EnvelopeTarget>
+															<PointeeId Value="21526"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="24" Value="0"/>
+																<FloatEvent Id="3" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="33">
+														<EnvelopeTarget>
+															<PointeeId Value="21522"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="0"/>
+																<FloatEvent Id="3" Time="3" Value="0"/>
+																<FloatEvent Id="4" Time="4.5" Value="0"/>
+																<FloatEvent Id="5" Time="6" Value="0"/>
+																<FloatEvent Id="6" Time="7.5" Value="255"/>
+																<FloatEvent Id="7" Time="9" Value="204"/>
+																<FloatEvent Id="8" Time="10.5" Value="255"/>
+																<FloatEvent Id="9" Time="12" Value="0"/>
+																<FloatEvent Id="10" Time="13.5" Value="0"/>
+																<FloatEvent Id="11" Time="15" Value="0"/>
+																<FloatEvent Id="12" Time="16.5" Value="0"/>
+																<FloatEvent Id="13" Time="18" Value="255"/>
+																<FloatEvent Id="14" Time="19.5" Value="204"/>
+																<FloatEvent Id="15" Time="21" Value="255"/>
+																<FloatEvent Id="16" Time="22.5" Value="0"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="34">
+														<EnvelopeTarget>
+															<PointeeId Value="21544"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="0"/>
+																<FloatEvent Id="3" Time="3" Value="0"/>
+																<FloatEvent Id="4" Time="4.5" Value="0"/>
+																<FloatEvent Id="5" Time="6" Value="0"/>
+																<FloatEvent Id="6" Time="7.5" Value="255"/>
+																<FloatEvent Id="7" Time="9" Value="204"/>
+																<FloatEvent Id="8" Time="10.5" Value="255"/>
+																<FloatEvent Id="9" Time="12" Value="0"/>
+																<FloatEvent Id="10" Time="13.5" Value="0"/>
+																<FloatEvent Id="11" Time="15" Value="0"/>
+																<FloatEvent Id="12" Time="16.5" Value="0"/>
+																<FloatEvent Id="13" Time="18" Value="255"/>
+																<FloatEvent Id="14" Time="19.5" Value="204"/>
+																<FloatEvent Id="15" Time="21" Value="255"/>
+																<FloatEvent Id="16" Time="22.5" Value="0"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="35">
+														<EnvelopeTarget>
+															<PointeeId Value="21540"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="51"/>
+																<FloatEvent Id="2" Time="1.5" Value="255"/>
+																<FloatEvent Id="3" Time="3" Value="255"/>
+																<FloatEvent Id="4" Time="4.5" Value="255"/>
+																<FloatEvent Id="5" Time="6" Value="255"/>
+																<FloatEvent Id="6" Time="7.5" Value="0"/>
+																<FloatEvent Id="7" Time="9" Value="0"/>
+																<FloatEvent Id="8" Time="10.5" Value="0"/>
+																<FloatEvent Id="9" Time="12" Value="255"/>
+																<FloatEvent Id="10" Time="13.5" Value="255"/>
+																<FloatEvent Id="11" Time="15" Value="255"/>
+																<FloatEvent Id="12" Time="16.5" Value="255"/>
+																<FloatEvent Id="13" Time="18" Value="0"/>
+																<FloatEvent Id="14" Time="19.5" Value="0"/>
+																<FloatEvent Id="15" Time="21" Value="0"/>
+																<FloatEvent Id="16" Time="22.5" Value="255"/>
+																<FloatEvent Id="17" Time="24" Value="51"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="36">
+														<EnvelopeTarget>
+															<PointeeId Value="21574"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="0"/>
+																<FloatEvent Id="3" Time="3" Value="0"/>
+																<FloatEvent Id="4" Time="4.5" Value="0"/>
+																<FloatEvent Id="5" Time="6" Value="0"/>
+																<FloatEvent Id="6" Time="7.5" Value="255"/>
+																<FloatEvent Id="7" Time="9" Value="204"/>
+																<FloatEvent Id="8" Time="10.5" Value="255"/>
+																<FloatEvent Id="9" Time="12" Value="0"/>
+																<FloatEvent Id="10" Time="13.5" Value="0"/>
+																<FloatEvent Id="11" Time="15" Value="0"/>
+																<FloatEvent Id="12" Time="16.5" Value="0"/>
+																<FloatEvent Id="13" Time="18" Value="255"/>
+																<FloatEvent Id="14" Time="19.5" Value="204"/>
+																<FloatEvent Id="15" Time="21" Value="255"/>
+																<FloatEvent Id="16" Time="22.5" Value="0"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="37">
+														<EnvelopeTarget>
+															<PointeeId Value="21572"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="34"/>
+																<FloatEvent Id="3" Time="3" Value="102"/>
+																<FloatEvent Id="4" Time="4.5" Value="170"/>
+																<FloatEvent Id="5" Time="6" Value="34"/>
+																<FloatEvent Id="6" Time="7.5" Value="102"/>
+																<FloatEvent Id="7" Time="9" Value="51"/>
+																<FloatEvent Id="8" Time="10.5" Value="68"/>
+																<FloatEvent Id="9" Time="12" Value="34"/>
+																<FloatEvent Id="10" Time="13.5" Value="102"/>
+																<FloatEvent Id="11" Time="15" Value="170"/>
+																<FloatEvent Id="12" Time="16.5" Value="34"/>
+																<FloatEvent Id="13" Time="18" Value="102"/>
+																<FloatEvent Id="14" Time="19.5" Value="51"/>
+																<FloatEvent Id="15" Time="21" Value="68"/>
+																<FloatEvent Id="16" Time="22.5" Value="34"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="38">
+														<EnvelopeTarget>
+															<PointeeId Value="21550"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="0"/>
+																<FloatEvent Id="2" Time="1.5" Value="0"/>
+																<FloatEvent Id="3" Time="3" Value="0"/>
+																<FloatEvent Id="4" Time="4.5" Value="0"/>
+																<FloatEvent Id="5" Time="6" Value="0"/>
+																<FloatEvent Id="6" Time="7.5" Value="255"/>
+																<FloatEvent Id="7" Time="9" Value="204"/>
+																<FloatEvent Id="8" Time="10.5" Value="255"/>
+																<FloatEvent Id="9" Time="12" Value="0"/>
+																<FloatEvent Id="10" Time="13.5" Value="0"/>
+																<FloatEvent Id="11" Time="15" Value="0"/>
+																<FloatEvent Id="12" Time="16.5" Value="0"/>
+																<FloatEvent Id="13" Time="18" Value="255"/>
+																<FloatEvent Id="14" Time="19.5" Value="204"/>
+																<FloatEvent Id="15" Time="21" Value="255"/>
+																<FloatEvent Id="16" Time="22.5" Value="0"/>
+																<FloatEvent Id="17" Time="24" Value="0"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+													<ClipEnvelope Id="39">
+														<EnvelopeTarget>
+															<PointeeId Value="21546"/>
+														</EnvelopeTarget>
+														<Automation>
+															<Events>
+																<FloatEvent Id="0" Time="-63072000" Value="0"/>
+																<FloatEvent Id="1" Time="0" Value="51"/>
+																<FloatEvent Id="2" Time="1.5" Value="255"/>
+																<FloatEvent Id="3" Time="3" Value="255"/>
+																<FloatEvent Id="4" Time="4.5" Value="255"/>
+																<FloatEvent Id="5" Time="6" Value="255"/>
+																<FloatEvent Id="6" Time="7.5" Value="0"/>
+																<FloatEvent Id="7" Time="9" Value="0"/>
+																<FloatEvent Id="8" Time="10.5" Value="0"/>
+																<FloatEvent Id="9" Time="12" Value="255"/>
+																<FloatEvent Id="10" Time="13.5" Value="255"/>
+																<FloatEvent Id="11" Time="15" Value="255"/>
+																<FloatEvent Id="12" Time="16.5" Value="255"/>
+																<FloatEvent Id="13" Time="18" Value="0"/>
+																<FloatEvent Id="14" Time="19.5" Value="0"/>
+																<FloatEvent Id="15" Time="21" Value="0"/>
+																<FloatEvent Id="16" Time="22.5" Value="255"/>
+																<FloatEvent Id="17" Time="24" Value="51"/>
+															</Events>
+															<AutomationTransformViewState>
+																<IsTransformPending Value="false"/>
+																<TimeAndValueTransforms/>
+															</AutomationTransformViewState>
+														</Automation>
+														<LoopSlot>
+															<Value/>
+														</LoopSlot>
+														<ScrollerTimePreserver>
+															<LeftTime Value="0"/>
+															<RightTime Value="0"/>
+														</ScrollerTimePreserver>
+													</ClipEnvelope>
+												</Envelopes>
+											</Envelopes>
+											<ScrollerTimePreserver>
+												<LeftTime Value="0"/>
+												<RightTime Value="0"/>
+											</ScrollerTimePreserver>
+											<TimeSelection>
+												<AnchorTime Value="0"/>
+												<OtherTime Value="0"/>
+											</TimeSelection>
+											<Legato Value="false"/>
+											<Ram Value="false"/>
+											<GrooveSettings>
+												<GrooveId Value="-1"/>
+											</GrooveSettings>
+											<Disabled Value="false"/>
+											<VelocityAmount Value="0"/>
+											<FollowAction>
+												<FollowTime Value="4"/>
+												<IsLinked Value="true"/>
+												<LoopIterations Value="1"/>
+												<FollowActionA Value="4"/>
+												<FollowActionB Value="0"/>
+												<FollowChanceA Value="100"/>
+												<FollowChanceB Value="0"/>
+												<JumpIndexA Value="1"/>
+												<JumpIndexB Value="1"/>
+												<FollowActionEnabled Value="false"/>
+											</FollowAction>
+											<Grid>
+												<FixedNumerator Value="1"/>
+												<FixedDenominator Value="16"/>
+												<GridIntervalPixel Value="20"/>
+												<Ntoles Value="2"/>
+												<SnapToGrid Value="true"/>
+												<Fixed Value="true"/>
+											</Grid>
+											<FreezeStart Value="0"/>
+											<FreezeEnd Value="0"/>
+											<IsWarped Value="true"/>
+											<TakeId Value="0"/>
+											<IsInKey Value="false"/>
+											<ScaleInformation>
+												<Root Value="0"/>
+												<Name Value="0"/>
+											</ScaleInformation>
+											<AutomationEnvelopesListWrapper LomId="0"/>
+											<Notes>
+												<KeyTracks/>
+												<PerNoteEventStore>
+													<EventLists/>
+												</PerNoteEventStore>
+												<NoteProbabilityGroups/>
+												<ProbabilityGroupIdGenerator>
+													<NextId Value="1"/>
+												</ProbabilityGroupIdGenerator>
+												<NoteIdGenerator>
+													<NextId Value="1"/>
+												</NoteIdGenerator>
+											</Notes>
+											<BankSelectCoarse Value="-1"/>
+											<BankSelectFine Value="-1"/>
+											<ProgramChange Value="-1"/>
+											<NoteEditorFoldInZoom Value="-1"/>
+											<NoteEditorFoldInScroll Value="-1"/>
+											<NoteEditorFoldOutZoom Value="3072"/>
+											<NoteEditorFoldOutScroll Value="-1280"/>
+											<NoteEditorFoldScaleZoom Value="-1"/>
+											<NoteEditorFoldScaleScroll Value="0"/>
+											<NoteSpellingPreference Value="0"/>
+											<AccidentalSpellingPreference Value="3"/>
+											<PreferFlatRootNote Value="false"/>
+											<ExpressionGrid>
+												<FixedNumerator Value="1"/>
+												<FixedDenominator Value="16"/>
+												<GridIntervalPixel Value="20"/>
+												<Ntoles Value="2"/>
+												<SnapToGrid Value="false"/>
+												<Fixed Value="false"/>
+											</ExpressionGrid>
+										</MidiClip>
+									</Value>
 								</ClipSlot>
 								<HasStop Value="true"/>
 							</ClipSlot>
@@ -7185,7 +8625,7 @@
 					<JumpIndexB Value="1"/>
 					<FollowActionEnabled Value="false"/>
 				</FollowAction>
-				<Name Value=" 3"/>
+				<Name Value="waltz_intro1"/>
 				<Annotation Value=""/>
 				<Color Value="-1"/>
 				<Tempo Value="120"/>
