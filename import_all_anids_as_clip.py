@@ -19,21 +19,21 @@ def finde_letzte_als_datei(im_ordner):
 
     return os.path.join(im_ordner, letzte_datei)
 
-def verarbeite_anid_dateien(quellordner, zielordner):
+def verarbeite_txt_dateien(quellordner, zielordner):
     # Sicherstellen, dass der Zielordner existiert
     if not os.path.exists(zielordner):
         os.makedirs(zielordner)
     
     # Durch alle Dateien im Quellordner gehen
     for dateiname in os.listdir(quellordner):
-        if dateiname.endswith(".anid"):
+        if dateiname.endswith(".txt"):
             voller_pfad = os.path.join(quellordner, dateiname)
             ziel_pfad = os.path.join(zielordner, dateiname)
             
             # hinzufuegen
             my_path = "vierter_versuch Project"
             old_ableton_file = finde_letzte_als_datei(my_path)
-            new_ableton_file = "".join(old_ableton_file.split("__")[0:-1]) + "__" + datetime.now().strftime("%Y%m%d%H%M%S") + ".als"
+            new_ableton_file = "".join(old_ableton_file.split("__")[0]) + "__" + datetime.now().strftime("%Y%m%d%H%M%S") + ".als"
             add_fixture_idea_as_clip_to_ableton_project(old_ableton_file, new_ableton_file, fixture_idea_file=voller_pfad, stuetzstellen="both")
 
             # Datei verschieben
@@ -41,6 +41,6 @@ def verarbeite_anid_dateien(quellordner, zielordner):
 
 
 if __name__ == "__main__":
-    verarbeite_anid_dateien(source_folder, dest_folder)
+    verarbeite_txt_dateien(source_folder, dest_folder)
 
 

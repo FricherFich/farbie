@@ -129,13 +129,13 @@ def split_fixture_idea_dict_into_channels(fixture_idea_dict:list):
         fixture_dmx_channels = {"red": fixture_red_dmx_channel,
                             "green": fixture_red_dmx_channel+1,
                             "blue": fixture_red_dmx_channel+2}
-        fixture_automation_target = {k: dmxis_channel_to_automation_target[str(v)] for k,v in fixture_dmx_channels.items()}
+        fixture_automation_target = {k: dmxis_channel_to_automation_target["Fader "+str(v)] for k,v in fixture_dmx_channels.items()}
 
         for single_color_channel_name in ["red", "green", "blue"]:
             payload = {
                 "automation_pointee_id": fixture_automation_target[single_color_channel_name],
                 "time": single_fixture_move["position"],
-                "value": single_fixture_move[single_color_channel_name] / 255
+                "value": single_fixture_move[single_color_channel_name]  # Echter DMX-Wert 0 bis 255
             }
             channel_specific_list.append(payload)
 

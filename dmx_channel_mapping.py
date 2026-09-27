@@ -3,13 +3,7 @@ from als_xml_conversion import als_file_to_xml_file
 
 
 def get_red_channel_by_fixture_name(fixture_name):
-    fixture_kanalbelegung = {
-        "PAR64.3L":65,
-        "PAR64.2L":72,
-        "PAR64.1L":76,
-        "PAR64.1R":92,
-        "PAR64.2R":88,
-        "PAR64.3R":81,
+    fixture_kanalbelegung_old = {
         "Apestick01":1,
         "Apestick02":5,
         "Apestick03":9,
@@ -20,7 +14,43 @@ def get_red_channel_by_fixture_name(fixture_name):
         "Apestick08":29,
         "Apestick09":33,
         "Apestick10":37
+    }
 
+    fixture_kanalbelegung = {
+        "Tube01": 1,
+        "Tube02": 5,
+        "Tube03": 9,
+        "Tube04": 13,
+        "Tube05": 17,
+        "Tube06": 21,
+        "Tube07": 25,
+        "Tube08": 29,
+        "Tube09": 33,
+        "Tube10": 37,
+        "Spot1": 115,
+    "Spot2":143,
+    "Spot3":122,
+    "Spot4":129,
+    "Spot5":150,
+    "Spot6":136,
+        "Laser1": 74,
+    "Laser2": 81,
+    "Laser3": 88,
+    "Laser4":95
+    }
+
+    fixture_kanalbelegung_laser_velocities = {
+        "Laser1": 78,
+    "Laser2": 85,
+    "Laser3":92,
+    "Laser4":99
+    }
+
+    fixture_kanalbelegung_laser_directions = {
+        "Laser1": 79,
+    "Laser2": 86,
+    "Laser3":93,
+    "Laser4":100
     }
 
     return fixture_kanalbelegung.get(fixture_name)

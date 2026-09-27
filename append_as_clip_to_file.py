@@ -21,8 +21,8 @@ def add_fixture_idea_as_clip_to_ableton_project(old_project_filename:str, new_pr
     else:
         stuetzstellen = [stuetzstellen]
     for stuetzstelle in stuetzstellen:
-        anid_dict = fixture_idea_to_fixture_idea_dict(fixture_idea_file, stuetzstelle)
-        end_dict = split_fixture_idea_dict_into_channels(anid_dict)
+        txt_dict = fixture_idea_to_fixture_idea_dict(fixture_idea_file, stuetzstelle)
+        end_dict = split_fixture_idea_dict_into_channels(txt_dict)
         envelope_xml = end_list_to_envelope_xml(end_dict)
         single_clip_name = clip_name + "_" + stuetzstelle[0]
         add_new_clip_to_als(old_als_file="TEMP.als",
@@ -33,9 +33,3 @@ def add_fixture_idea_as_clip_to_ableton_project(old_project_filename:str, new_pr
                             envelope_entry=envelope_xml)
     shutil.copy2("TEMP.als", new_project_filename)
     return
-
-
-
-if __name__ == "__main__":
-    fixture_idea_file = "dual_symmetry_2.anid"
-    add_fixture_idea_as_clip_to_ableton_project("zweiter_versuch.als", "zweiter_versuch.als", fixture_idea_file=fixture_idea_file, stuetzstellen="both")

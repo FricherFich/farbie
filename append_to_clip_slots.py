@@ -5,94 +5,102 @@ import re
 from als_xml_conversion import als_to_xml_structure, prettify, prettified_xml_string_to_als
 
 
-def append_to_existing_clipslot_list(root, clip_name:str, clip_current_end, clip_envelope_xml_content, scene_name:str):
-    """fuegt einen neuen Clip unter den letzten Clip hinzu, dessen Automasierung in clip_envelope_xml_content übergeben wird"""
+def append_to_existing_clipslot_list(root, clip_name: str, clip_current_end, clip_envelope_xml_content, scene_name: str):
+    """Befuellt den naechsten freien ClipSlot unter den vorhandenen Clips mit den neuen Automationskurven."""
 
+    # 1. Basis-Clip aus Slot 0 als Template holen
+    track = root.find(".//Tracks/MidiTrack")
+    if track is None:
+        raise ValueError("Kein MidiTrack im Projekt gefunden.")
 
-    # Parse the XML document
-    #root = ET.fromstring(current_xml_structure)
+    base_clip = track.find(".//MainSequencer/ClipSlotList/ClipSlot[@Id='0']//MidiClip")
+    if base_clip is None:
+        raise ValueError("Kein Basis-MidiClip in Slot 0 als Vorlage gefunden.")
 
-    # Find the ClipSlot with Id="0"
-    base_clipslot = root.find(".//ClipSlot[@Id='0']")
+    # 2. Den naechsten freien ClipSlot suchen (wo <Value/> leer ist)
+    clip_slots = track.findall(".//MainSequencer/ClipSlotList/ClipSlot")
+    target_slot = None
+    target_slot_index = -1
 
-    # If no base_clipslot is found, raise an error
-    if base_clipslot is None:
-        raise ValueError('No base ClipSlot found')
+    for idx, slot in enumerate(clip_slots):
+        val = slot.find("ClipSlot/Value")
+        if val is not None and len(val) == 0:  # leerer Slot
+            target_slot = slot
+            target_slot_index = idx
+            break
 
-    # Make a copy of the base_clipslot
-    new_clipslot = copy.deepcopy(base_clipslot)
+    if target_slot is None:
+        raise RuntimeError(
+            f"Kein freier ClipSlot mehr verfuegbar. Alle {len(clip_slots)} vorhandenen Slots sind belegt."
+        )
 
-    # Update the Id attribute of the new_clipslot
-    clipslot_ids = [int(clipslot.get('Id')) for clipslot in root.findall('.//ClipSlot') if clipslot.get('Id') is not None]
-    max_id = max(clipslot_ids)
-    new_clipslot.set('Id', str(max_id + 1))
+    # 3. Vorlage kopieren und Parameter setzen
+    new_clip = copy.deepcopy(base_clip)
+    new_clip.set("Id", str(target_slot_index + 1))
 
-    # Update the Name, CurrentEnd and Envelopes in the new_clipslot
-    new_clipslot.find('.//Name').set('Value', clip_name)
-    #new_clipslot.find('.//CurrentEnd').set('Value', str(clip_current_end))
+    # Name setzen
+    name_elem = new_clip.find("Name")
+    if name_elem is not None:
+        name_elem.set("Value", clip_name)
 
+    # Laenge synchron fuer CurrentEnd, LoopEnd und OutMarker setzen
+    str_len = str(clip_current_end)
+    cur_end = new_clip.find("CurrentEnd")
+    if cur_end is not None:
+        cur_end.set("Value", str_len)
 
-    #proxy_test
-    new_clipslot.find('.//CurrentEnd').set('Value', '100')
+    loop_elem = new_clip.find("Loop")
+    if loop_elem is not None:
+        loop_end = loop_elem.find("LoopEnd")
+        if loop_end is not None:
+            loop_end.set("Value", str_len)
+        out_marker = loop_elem.find("OutMarker")
+        if out_marker is not None:
+            out_marker.set("Value", str_len)
 
-    
-    midi_clip = new_clipslot.find('.//MidiClip')
-    old_envelopes = midi_clip.find('.//Envelopes')
-
+    # 4. Envelopes an der EXAKTEN Schema-Position ersetzen (direkt hinter TimeSignature)
     if clip_envelope_xml_content is not None:
-        new_envelopes = ET.fromstring(clip_envelope_xml_content) #TODO evtl. unnoetig, da bereits als XML-Struktur gegeben
-        # remove old envelopes and add new one
-        midi_clip.remove(old_envelopes)
-        midi_clip.append(new_envelopes)
+        if isinstance(clip_envelope_xml_content, str):
+            new_envelopes = ET.fromstring(clip_envelope_xml_content)
+        else:
+            new_envelopes = copy.deepcopy(clip_envelope_xml_content)
 
-    # Append the new_clipslot to the ClipSlotList
-    base_clipslot_parent = root.find('.//ClipSlotList')
-    base_clipslot_parent.append(new_clipslot)
+        old_env = new_clip.find("Envelopes")
+        if old_env is not None:
+            insert_pos = list(new_clip).index(old_env)
+            new_clip.remove(old_env)
+            new_clip.insert(insert_pos, new_envelopes)
+        else:
+            time_sig = new_clip.find("TimeSignature")
+            insert_pos = list(new_clip).index(time_sig) + 1
+            new_clip.insert(insert_pos, new_envelopes)
 
+    # 5. In den leeren Ziel-Slot einhaengen
+    slot_value = target_slot.find("ClipSlot/Value")
+    slot_value.clear()
+    slot_value.append(new_clip)
 
-
-    # Neue Codezeilen, um den FreezeSequencer-Bereich zu bearbeiten
-    freeze_sequencer = root.find('.//FreezeSequencer')
-    if freeze_sequencer is not None:
-        freeze_clip_slot_list = freeze_sequencer.find('.//ClipSlotList')
-        if freeze_clip_slot_list is not None:
-            # Der erste ClipSlot dient als Vorlage für den neuen ClipSlot
-            first_clip_slot = freeze_clip_slot_list.find('.//ClipSlot')
-            new_clip_slot = copy.deepcopy(first_clip_slot)
-            # Die ID des neuen ClipSlots wird auf den richtigen Wert gesetzt
-            new_clip_slot.attrib['Id'] = str(len(freeze_clip_slot_list))
-            # Fügt den neuen ClipSlot in die ClipSlotList ein
-            freeze_clip_slot_list.append(new_clip_slot)
-
-
-
-    # Neue Codezeilen, um den SceneNames-Bereich zu bearbeiten
-    scene_names = root.find('.//SceneNames')
-    if scene_names is not None:
-        # Die erste Szene dient als Vorlage für die neue Szene
-        first_scene = scene_names.find('.//Scene')
-        new_scene = copy.deepcopy(first_scene)
-        # Die ID und der Wert der neuen Szene werden auf die richtigen Werte gesetzt
-        new_scene.attrib['Id'] = str(len(scene_names))
-        new_scene.attrib['Value'] = scene_name
-        # Fügt die neue Szene in die SceneNames-Liste ein
-        scene_names.append(new_scene)
+    # 6. Szene an target_slot_index umbenennen (Live 12 Schema: <LiveSet><Scenes><Scene>)
+    scenes = root.findall(".//LiveSet/Scenes/Scene")
+    if target_slot_index < len(scenes) and scene_name:
+        scene_name_elem = scenes[target_slot_index].find("Name")
+        if scene_name_elem is not None:
+            scene_name_elem.set("Value", scene_name)
 
     return root
-
-
-
-
 
 
 def add_new_clip_to_als(old_als_file, new_als_file, clip_name, scene_name, clip_length, envelope_entry):
     root = als_to_xml_structure(old_als_file)
 
-    new_root = append_to_existing_clipslot_list(root, clip_name=clip_name, clip_current_end=clip_length, clip_envelope_xml_content=envelope_entry, scene_name=scene_name)
+    new_root = append_to_existing_clipslot_list(
+        root,
+        clip_name=clip_name,
+        clip_current_end=clip_length,
+        clip_envelope_xml_content=envelope_entry,
+        scene_name=scene_name,
+    )
     pretty_xml_string = prettify(new_root)
 
     prettified_xml_string_to_als(pretty_xml_string, new_als_file)
     return None
-
-
-
