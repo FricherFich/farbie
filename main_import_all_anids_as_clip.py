@@ -49,8 +49,8 @@ def verarbeite_txt_dateien(quellordner, zielordner, workdir_project):
 
 
 if __name__ == "__main__":
-    source_folder_txt_files = "effects/waltz"
-    dest_folder_txt_files = "tmp"
+    source_folder_txt_files = "effects"
+    dest_folder_txt_files = "imported"
     workdir_ableton_project = "output"
     verarbeite_txt_dateien(source_folder_txt_files, dest_folder_txt_files, workdir_ableton_project)
 

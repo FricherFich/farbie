@@ -23,7 +23,9 @@ This is mainly useful for building lighting cues from text definition files and 
 - `append_to_clip_slots.py` – appends a new clip into the Ableton XML structure
 - `dmx_channel_mapping.py` – DMX fixture/channel lookup
 - `prepare_envelope_xml.py` – creates envelope XML for automation
-- `frontend/previewer.py` – local visual preview of the script before importing
+- `als_xml_conversion.py` – unzips/rezips `.als` files to/from XML
+- `constants.py` – path to the base `.als` template used for DMX channel lookup
+- `frontend/preview.py` – local visual preview of the script before importing
 
 ## Prerequisites
 
@@ -70,7 +72,7 @@ You should see Python 3.12.x and the installed `pygame` version.
 
 ### 1) Prepare source files
 
-Place your text fixture files in a folder named `ANIDs_not_imported` in the project root.
+Place your text fixture files in a folder named `effects` in the project root.
 
 Example format:
 
@@ -94,10 +96,10 @@ python main_import_all_anids_as_clip.py
 
 What happens:
 
-- Finds the newest `.als` file in the project folder
+- Finds the newest `.als` file in the `output` folder
 - Copies it to a temporary working file
-- Imports every text script from `ANIDs_not_imported`
-- Moves each processed file to `ANIDs_imported`
+- Imports every text script from `effects`
+- Moves each processed file to `imported`
 - Saves a new timestamped `.als` file in the current directory
 
 ### 3) Preview a script visually
@@ -105,7 +107,7 @@ What happens:
 You can also preview a fixture script before importing it:
 
 ```bash
-python frontend/previewer.py path/to/your_fixture_file.txt
+python frontend/preview.py path/to/your_fixture_file.txt
 ```
 
 If no file is passed, the script falls back to a built-in demo sequence.
